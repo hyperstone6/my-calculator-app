@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --body-color: rgb(249, 234, 215);
+    --number-color: rgb(208, 203, 203);
+    --operator-color: rgba(255, 165, 0, 1);
+    --top-color: rgb(176, 169, 169);
+    --header-color: rgba(0, 0, 0, 1);
+    --header-text-color-1: rgb(210, 0, 0, 1);
+    --header-text-color-2: rgb(46, 195, 0);
+    --behind-btns-color: --body-color;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-color);
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 30rem;
+    height: 50rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.calc-header {
+    width: 100%;
+    height: 25%;
+    background-color: var(--header-color);
+    outline: 1px solid var(--header-color);
+    color: var(--header-text-color-1);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.result {
+    color: var(--header-text-color-2) !important;
+}
+
+.calc-header > * {
+    padding: 1rem 2rem;
+}
+
+.main-result {
+    font-size: 3.2rem;
+}
+
+.sub-result {
+    font-size: 2rem;
+}
+
+.calc-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 75%;
+    font-size: 2.2rem;
+    font-weight: 700;
+    background-color: var(--top-color);
+    color: var(--header-color);
+}
+
+.top {
+    background-color: var(--top-color);
+}
+
+.operators {
+    background-color: var(--operator-color);
+}
+
+.number {
+    background-color: var(--number-color);
+}
+
+.btn {
+    
+    outline: 1px solid var(--header-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: all 100ms ease;
+    user-select: none;
+}
+
+.btn:last-child {
+    width: 200%;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}

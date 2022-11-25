@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "electron": "^21.2.0"
+  },
+  "name": "calculator",
+  "productName": "Adrian's Calculator",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Adrian Steele",
+  "license": "ISC",
+  "description": "calculator desktop app",
+  "devDependencies": {
+    "electron-packager": "^17.0.0"
+  }
+}
